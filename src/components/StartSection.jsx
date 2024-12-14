@@ -1,5 +1,6 @@
 import "./StartSection.css";
 import { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 
 function StartSection() {
   const words = [
@@ -87,9 +88,11 @@ function StartSection() {
               <img src="/tiktok.svg" alt="" />
             </div>
           </a>
-          <div className="icon">
-            <img src="/email.svg" alt="" />
-          </div>
+          <NavLink to={"/privacy"}>
+            <div className="icon">
+              <img src="/email.svg" alt="" />
+            </div>
+          </NavLink>
         </div>
       </div>
     </div>

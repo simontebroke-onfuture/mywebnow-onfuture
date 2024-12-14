@@ -40,7 +40,7 @@ function App() {
       <ScrollToTop />
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/mywebnow-onfuture" element={<Home />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/agb" element={<AGB />} />
         <Route path="/cookies" element={<Cookies />} />

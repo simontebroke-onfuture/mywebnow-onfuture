@@ -2,7 +2,7 @@
   "name": "clickform",
   "private": true,
   "version": "0.0.0",
-  "homepage": "simontebroke-onfuture.github.io",
+  "homepage": "simontebroke-onfuture.github.io/mywebnow-onfuture",
   "type": "module",
   "scripts": {
     "dev": "vite",

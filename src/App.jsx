@@ -36,7 +36,7 @@ function Home() {
 
 function App() {
   return (
-    <Router basename="/mywebnow-onfuture/">
+    <Router>
       <ScrollToTop />
       <Navbar />
       <Routes>

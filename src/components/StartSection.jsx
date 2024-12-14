@@ -61,7 +61,7 @@ function StartSection() {
           </h1>
           <p className="startDesc">
             So einfach: Design wählen, Kontakt aufnehmen und wir kümmern uns um
-            den Rest. Deine Webseite ist sofort bereit.
+            den Rest - deine Webseite ist sofort bereit.
           </p>
         </div>
         <div className="searchItem">

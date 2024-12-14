@@ -36,11 +36,11 @@ function Home() {
 
 function App() {
   return (
-    <Router>
+    <Router basename="/mywebnow-onfuture/">
       <ScrollToTop />
       <Navbar />
       <Routes>
-        <Route path="/mywebnow-onfuture" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/agb" element={<AGB />} />
         <Route path="/cookies" element={<Cookies />} />

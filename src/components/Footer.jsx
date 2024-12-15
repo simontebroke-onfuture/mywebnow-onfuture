@@ -1,4 +1,5 @@
 import "./Footer.css";
+import { NavLink } from "react-router-dom";
 
 function Footer() {
   return (
@@ -32,7 +33,16 @@ function Footer() {
           </button>
           <div className="bottom-footer-sec">
             <p>
-              mywebnow©2015-2024 <span>Manage Cookies</span>
+              mywebnow©2015-2024
+              <NavLink className="navLink" to={"/cookies"}>
+                <span>Cookies & Nutzung</span>
+              </NavLink>
+              <NavLink className="navLink" to={"/privacy"}>
+                <span>Datenschutz</span>
+              </NavLink>
+              <NavLink className="navLink" to={"/agb"}>
+                <span>Impressum</span>
+              </NavLink>
             </p>
             <div className="icons">
               <img src="/whatsapp.svg" alt="" />

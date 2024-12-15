@@ -3,26 +3,106 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 1.2rem;
   flex-direction: column;
+  .updatedDate {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 27px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .agbHeading {
+    font-size: 71px;
+    font-weight: 400;
+    line-height: 75.04px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
   .textContainer {
     max-width: 726px;
-    .updatedDate {
-      font-size: 15px;
-      font-weight: 400;
-      line-height: 27px;
-      text-underline-position: from-font;
-      text-decoration-skip-ink: none;
-      margin-bottom: 10px;
-      text-align: center;
+    .languageButton {
+      background-color: #fff;
+      display: flex;
+      justify-content: space-between;
+      padding: 7px 13px;
+      border-radius: 5px;
+      border: #e3e3e3 1px solid;
+      margin-top: 70px;
+      cursor: pointer;
+      .language {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 27px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+      }
+      &.langButtonPrivacy {
+        margin-bottom: 28px;
+      }
+      &.langButtonElse {
+        margin-bottom: 50px;
+      }
     }
-    .agbHeading {
-      font-size: 71px;
-      font-weight: 400;
-      line-height: 75.04px;
-      letter-spacing: -0.01em;
-      text-align: center;
-      text-underline-position: from-font;
-      text-decoration-skip-ink: none;
+    .introductionTextBlock {
+      margin-bottom: 70px;
+      .introductionText {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+      }
+    }
+    .agbTextBlockContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 70px;
+      .agbTextBlock {
+        &.agbLastChildBlock {
+          margin-bottom: 100px;
+        }
+        &.agbTextBlockFirstChild {
+          margin-top: 50px;
+        }
+        .agbParagraph {
+          font-size: 27px;
+          font-weight: 400;
+          line-height: 40.14px;
+          text-align: left;
+          text-underline-position: from-font;
+          text-decoration-skip-ink: none;
+          margin-bottom: 28px;
+        }
+        .agbText {
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 27px;
+          text-align: left;
+          text-underline-position: from-font;
+          text-decoration-skip-ink: none;
+          span {
+            font-weight: 600;
+          }
+          .originSpan {
+            font-weight: 400;
+          }
+          .userDataList {
+            position: relative;
+            left: 20px;
+            .userDataListSecondChild {
+              position: relative;
+              left: 20px;
+            }
+          }
+        }
+      }
     }
   }
 }

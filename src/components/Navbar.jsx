@@ -34,8 +34,8 @@ function Navbar() {
       navigator
         .share({
           title: "MyWebNow",
-          text: "MyWebNow - Check it out!",
-          url: "https://clickform.vercel.app",
+          text: "MyWebNow - Letzter Klick zu deiner fertigen Website.",
+          url: "https://www.mywebnow.de",
         })
         .then(() => {
           console.log("Shared successfully!");

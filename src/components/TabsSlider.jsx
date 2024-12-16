@@ -4,48 +4,52 @@ import "./TabsSlider.css";
 
 const tabs = [
   {
-    id: "world",
-    label: "Analyze data",
-    img: "/mainframe1.jpg",
+    id: "gastronomie",
+    label: "Gastronomie",
+    img: "/Gastronomie.jpg",
     categories: ["Standort", "E-Mail", "Lieferando", "Social-Media Links"],
     description: "Beschreibung",
     sumDesc:
       "Starbucks' Design konzentriert sich auf warme Farben, natürliche Texturen und eine einladende Atmosphäre, die das Markengefühl widerspiegelt. Illustrative Details und klare Navigation schaffen ein Erlebnis, das Handwerkskunst und Moderne verbindet.",
     dynamicText:
       "Folgende Elemente deiner Seite wie Bilder, Texte, Fonts, Farben, Logos und Buttons sind variabel und frei personalisierbar.",
+    icon: "/restaurant.svg",
   },
   {
-    id: "ny",
-    label: "Download the app",
-    img: "/5.jpg",
+    id: "dienstleistungen",
+    label: "Dienstleistungen",
+    img: "/Services.jpg",
     categories: ["App-Store", "Play-Store"],
     description: "Beschreibung",
     sumDesc:
       "JKFJAKFJKA KASDL LASDK Design konzentriert sich auf warme Farben, natürliche Texturen und eine einladende Atmosphäre, die das Madqwdqwrkengefühl widerspiegelt.",
     dynamicText:
       "Folgende Elemente deiner Seite wie Bilder, Texte, Fonts, Farben, Logos und Buttons sind variabel und frei personalisierbar.dqwdwqdqwdqwdwq",
+    icon: "/globus.svg",
   },
   {
-    id: "business",
-    label: "Business tools",
-    img: "/3.jpg",
+    id: "vereine",
+    label: "Vereine & Organisationen",
+    img: "/Vereine.jpg",
     categories: ["CRM", "Marketing", "Analytics"],
     description: "Beschreibung",
     sumDesc:
       "Starbucks' Design konzentriert sich auf warme Farben, natürliche Texturen und eine einladende Atmosphäre, die das Markengefühl widerspiegelt.",
     dynamicText:
       "Geschäftstools wie CRM-Formulare, Marketing-Kampagnen und Analysen sind konfigurierbar. diqwdioq j idqwj iqwjd iqwjdiq",
+    icon: "/group.svg",
   },
   {
-    id: "arts",
-    label: "Creative suite",
-    img: "/4.jpg",
+    id: "handwerk",
+    label: "Handwerk & Bau",
+    img: "/Handwerk.jpg",
     categories: ["Illustration", "Design", "3D Modeling"],
     description: "Beschreibung",
     sumDesc:
       "Starbucks' Design konzentriert sich auf warme Farben, natürliche Texturen und eine einladende Atmosphäre, die das Markengefühl widerspiegelt.",
     dynamicText:
       "Gestalterische Elemente wie Illustrationen, Layouts und 3D-Modelle können angepasst werden.",
+    icon: "/hammer.svg",
   },
 ];
 
@@ -56,7 +60,7 @@ function TabsSlider() {
 
   return (
     <div className="container">
-      <p className="heading">Supercharge your team's performance</p>
+      <p className="heading">Wähle ein Design, passend zu deinem Business.</p>
       <div className="tabs-slider-container">
         {tabs.map((tab) => (
           <button
@@ -69,6 +73,7 @@ function TabsSlider() {
               WebkitTapHighlightColor: "transparent",
             }}
           >
+            <img src={tab.icon} alt="" className="categoryIcon" />
             {activeTab === tab.id && (
               <motion.span
                 layoutId="bubble"

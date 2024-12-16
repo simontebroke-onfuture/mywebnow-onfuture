@@ -91,6 +91,20 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+@media only screen and (max-width: 830px) {
+  .bottom-footer-sec {
+    flex-direction: column-reverse !important;
+    gap: 23px;
+    margin-top: 43px;
+  }
+  .langButton {
+    width: 100% !important;
+    margin-top: 50px;
+  }
+  .lower-footer {
+    margin-top: 0px !important;
+  }
+}
 @media only screen and (max-width: 600px) {
   .footer .footer-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -99,15 +113,7 @@
   .footer-headline {
     margin-top: 50px;
   }
-  .bottom-footer-sec {
-    flex-direction: column-reverse !important;
-    gap: 43px;
-    margin-top: 43px;
-  }
   .langButton {
-    width: 100% !important;
-  }
-  .lower-footer {
-    margin-top: 0px !important;
+    margin-top: 0px;
   }
 }/*# sourceMappingURL=Footer.css.map */

@@ -1,7 +1,29 @@
 import "./Footer.css";
 import { NavLink } from "react-router-dom";
+import React, { useState, useEffect } from "react";
 
 function Footer() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 830) {
+        setIsMobile(true);
+      } else {
+        setIsMobile(false);
+      }
+    };
+
+    // Initial check
+    handleResize();
+
+    // Event listener für Fenstergröße
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup beim Unmounten
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <>
       <div className="footer">
@@ -32,18 +54,38 @@ function Footer() {
             <p className="buttonText">Deutsch</p>
           </button>
           <div className="bottom-footer-sec">
-            <p>
-              mywebnow©2015-2024
-              <NavLink className="navLink" to={"/cookies"}>
-                <span>Cookies & Nutzung</span>
-              </NavLink>
-              <NavLink className="navLink" to={"/privacy"}>
-                <span>Datenschutz</span>
-              </NavLink>
-              <NavLink className="navLink" to={"/agb"}>
-                <span>Impressum</span>
-              </NavLink>
-            </p>
+            {isMobile ? (
+              <div>
+                <p>© 2024 Mywebnow. All rights reserved.</p>
+                <p>
+                  <NavLink className="navLink" to={"/cookies"}>
+                    <span>Cookies & Nutzung</span>
+                  </NavLink>
+                  <NavLink className="navLink" to={"/privacy"}>
+                    <span>Datenschutz</span>
+                  </NavLink>
+                  <NavLink className="navLink" to={"/agb"}>
+                    <span>Impressum</span>
+                  </NavLink>
+                </p>
+              </div>
+            ) : (
+              <div>
+                <p>
+                  © 2024 Mywebnow. All rights reserved.
+                  <NavLink className="navLink" to={"/cookies"}>
+                    <span>Cookies & Nutzung</span>
+                  </NavLink>
+                  <NavLink className="navLink" to={"/privacy"}>
+                    <span>Datenschutz</span>
+                  </NavLink>
+                  <NavLink className="navLink" to={"/agb"}>
+                    <span>Impressum</span>
+                  </NavLink>
+                </p>
+              </div>
+            )}
+
             <div className="icons">
               <img src="/whatsapp.svg" alt="" />
               <img src="/instagram.svg" alt="" />

@@ -73,7 +73,7 @@ function StartSection() {
           <img src="/searcharrow.svg" alt="Search" />
         </div>
         <div className="iconItem">
-          <a href="https://wa.me/4915126672731" target="_blank">
+          <a href="https://wa.me/4915175357857" target="_blank">
             <div className="icon">
               <img src="/whatsapp.svg" alt="" />
             </div>
@@ -88,11 +88,11 @@ function StartSection() {
               <img src="/tiktok.svg" alt="" />
             </div>
           </a>
-          <NavLink to={"/privacy"}>
+          <a href="mailto:info@mywebnow.de">
             <div className="icon">
               <img src="/email.svg" alt="" />
             </div>
-          </NavLink>
+          </a>
         </div>
       </div>
     </div>

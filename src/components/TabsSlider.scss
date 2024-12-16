@@ -42,6 +42,10 @@ button {
   font-weight: 450;
   color: rgb(0, 0, 0);
   transition: all 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
 
 .tab-bubble {

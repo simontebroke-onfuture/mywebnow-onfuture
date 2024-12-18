@@ -27,7 +27,7 @@ function Footer() {
   return (
     <>
       <div className="footer">
-        <div className="footer-grid">
+        {/* <div className="footer-grid">
           <div className="column column1">
             <p className="footer-item footer-headline">Our Research</p>
             <p className="footer-item">Our Research</p>
@@ -47,7 +47,7 @@ function Footer() {
             <p className="footer-item footer-headline">Our Research</p>
             <p className="footer-item">Our Research</p>
           </div>
-        </div>
+        </div> */}
         <div className="lower-footer">
           <button className="langButton">
             <img src="/lang.svg" alt="" />

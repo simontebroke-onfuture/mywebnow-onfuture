@@ -39,29 +39,65 @@
         max-width: 537px !important;
         width: 100% !important;
         height: 639px;
-        .topText {
-          font-size: 23px;
-          font-weight: 400;
-          line-height: 32.72px;
-          letter-spacing: -0.01em;
-          text-align: left;
-          text-underline-position: from-font;
-          text-decoration-skip-ink: none;
+        .plan {
+          display: flex;
+          flex: row;
+          gap: 2px;
           margin-bottom: 11px;
+          .topText {
+            font-size: 23px;
+            font-weight: 500;
+            line-height: 32.72px;
+            letter-spacing: -0.01em;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            &.plus {
+              background: radial-gradient(
+                86.22% 84.65% at 93.18% 37.88%,
+                #ea994f 17.24%,
+                #e46f90 32.29%,
+                #cc6deb 50.99%,
+                #65b9f9 74.38%
+              );
+              color: transparent;
+              background-clip: text;
+              margin-left: 1px;
+            }
+          }
         }
-        .priceText {
-          margin-bottom: 11px;
-          font-size: 23px;
-          font-weight: 400;
-          line-height: 32.72px;
-          letter-spacing: -0.01em;
-          text-align: left;
-          text-underline-position: from-font;
-          text-decoration-skip-ink: none;
+        .pricingText {
+          display: flex;
+          align-items: flex-start;
+          justify-content: flex-start;
+          gap: 12px;
+          margin-bottom: 10px;
+          .priceText {
+            font-size: 23px;
+            font-weight: 300;
+            line-height: 32.72px;
+            letter-spacing: -0.01em;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            &.priceTextDef {
+              font-size: 16px;
+              align-self: flex-start;
+              font-weight: 400;
+              text-align: left;
+              text-underline-position: from-font;
+              text-decoration-skip-ink: none;
+              span {
+                font-size: 14px;
+                position: relative;
+                bottom: 2px;
+              }
+            }
+          }
         }
         .provisionText {
           margin-bottom: 17px;
-          font-size: 15px;
+          font-size: 13.5px;
           font-weight: 400;
           text-align: left;
           text-underline-position: from-font;
@@ -78,7 +114,7 @@
           flex-direction: row;
           img {
             position: relative;
-            bottom: 5px;
+            bottom: 8px;
             margin-right: 17px;
           }
         }
@@ -141,6 +177,20 @@
         top: 1px;
       }
     }
+    .iconItem {
+      display: flex;
+      flex-direction: row;
+      gap: 31px;
+      .icon {
+        width: 50px;
+        height: 50px;
+        background-color: #f1f1f1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+      }
+    }
   }
 }
 
@@ -178,5 +228,8 @@
   .gridSection .tryBox .boxText {
     font-size: 30px;
     line-height: 37px;
+  }
+  .gridSection .tryBox .iconItem {
+    gap: 26px;
   }
 }

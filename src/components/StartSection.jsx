@@ -4,10 +4,11 @@ import { NavLink } from "react-router-dom";
 
 function StartSection() {
   const words = [
-    "Give me a list of important philosophical works.",
-    "Calculate 897 times 62.",
-    "Translate “Good morning” into Japanese.",
-    "Name all the elements in the periodic table.",
+    "Eine Seite, die mein Restaurant perfekt darstellt.",
+    "Eine Plattform, die unsere Vereinsarbeit sichtbar macht.",
+    "Eine Seite, die Sicherheit und Seriosität ausstrahlt.",
+    "Ich will eine Seite wie Starbucks: modern und einladend.",
+    "Eine Webseite, die meine Specials und Events zeigt.",
   ];
   const [wordIndex, setWordIndex] = useState(0);
   const [characterIndex, setCharacterIndex] = useState(0);
@@ -57,12 +58,11 @@ function StartSection() {
     <div className="startSection">
       <div className="startSectionContainer">
         <div className="headingItem">
-          <h1 className="mainHeading">
-            Letzter Klick zu deiner fertigen Website.
-          </h1>
+          <h1 className="mainHeading">Worum geht's bei deiner Website?</h1>
           <p className="startDesc">
-            So einfach: Design wählen, Kontakt aufnehmen und wir kümmern uns um
-            den Rest. Deine Webseite ist sofort bereit.
+            Schreib uns – egal wo. Mywebnow übernimmt alles. In 5 Tagen ist
+            deine Webseite online – professionell aufbereitet, ohne dass du
+            etwas tun musst.
           </p>
         </div>
         <div className="searchItem">

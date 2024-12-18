@@ -68,7 +68,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 206px;
-  padding: 34px;
+  padding: 25px 34px 21px;
   border-radius: 4px;
 }
 .sectionOne .topGridContainer .gridItem .text1 {

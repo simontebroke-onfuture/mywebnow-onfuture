@@ -5,7 +5,10 @@ function AGB() {
     <>
       <div className="agbContainer">
         <p className="updatedDate">Aktualisiert am: 4. November 2024</p>
-        <p className="agbHeading">Allgemeine Geschäftsbedingungen (AGB)</p>
+        <p className="agbHeading">
+          Allgemeine <br />
+          Geschäftsbedingungen
+        </p>
         <div className="textContainer">
           <div className="languageButton langButtonPrivacy">
             <p className="language">German</p>

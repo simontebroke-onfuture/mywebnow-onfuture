@@ -207,7 +207,13 @@ function TabsSlider() {
                     className="infoDepFunction"
                     onClick={setInfoToFunktionen}
                   >
-                    <p className="depText">Funktionen</p>
+                    <p
+                      className={`depText ${
+                        currentInfo == "funktionen" ? "text-black" : ""
+                      }`}
+                    >
+                      Funktionen
+                    </p>
                     {currentInfo == "funktionen" ? (
                       <hr className="hr1 visible" />
                     ) : (
@@ -215,7 +221,13 @@ function TabsSlider() {
                     )}
                   </div>
                   <div className="infoDepFunction" onClick={setInfoToDesign}>
-                    <p className="depText">Design</p>
+                    <p
+                      className={`depText ${
+                        currentInfo == "design" ? "text-black" : ""
+                      }`}
+                    >
+                      Design
+                    </p>
                     {currentInfo == "design" ? (
                       <hr className="hr1 visible" />
                     ) : (
@@ -223,7 +235,11 @@ function TabsSlider() {
                     )}
                   </div>
                   <div className="infoDepFunction" onClick={setInfoToLaufzeit}>
-                    <p className="depText">
+                    <p
+                      className={`depText ${
+                        currentInfo == "laufzeit" ? "text-black" : ""
+                      }`}
+                    >
                       {isMobile ? " GoLive" : "Laufzeit zum GoLive"}
                     </p>
                     {currentInfo == "laufzeit" ? (

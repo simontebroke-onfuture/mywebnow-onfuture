@@ -115,8 +115,7 @@
   left: 20px;
 }
 .agbContainer .textContainer .agbTextBlockContainer .agbTextBlock .agbText .userDataList .userDataListSecondChild {
-  position: relative;
-  left: 20px;
+  margin-left: 20px;
 }
 
 .agb22 {

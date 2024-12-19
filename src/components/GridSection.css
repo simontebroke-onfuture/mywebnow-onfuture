@@ -218,8 +218,7 @@
           text-decoration-skip-ink: none;
 }
 .gridSection .sFooterContainer .sTextBlock .sText .sList {
-  position: relative;
-  left: 20px;
+  margin-left: 20px;
 }
 .gridSection .sFooterContainer .sTextBlock .sText .sList li {
   color: #707070;

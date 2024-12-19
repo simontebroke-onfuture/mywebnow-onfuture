@@ -21,6 +21,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import PrivacyPolicy from "./components/AGB/PrivacyPolicy";
 import AGB from "./components/AGB/AGB";
 import Cookies from "./components/AGB/Cookies";
+import Impressum from "./components/AGB/Impressum";
 
 function Home() {
   return (
@@ -44,6 +45,7 @@ function App() {
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/agb" element={<AGB />} />
         <Route path="/cookies" element={<Cookies />} />
+        <Route path="/impressum" element={<Impressum />} />
         <Route path="/design1" element={<Page1 />} />
         <Route path="/design2" element={<Page2 />} />
         <Route path="/design3" element={<Page3 />} />

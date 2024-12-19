@@ -3,7 +3,11 @@ import "./SectionOne.css";
 function SectionOne() {
   return (
     <div className="sectionOne">
-      <h1 className="heading">Nie war es einfacher, online perfekt zu sein.</h1>
+      <section id="vorgehen">
+        <h1 className="heading">
+          Nie war es einfacher, online perfekt zu sein.
+        </h1>
+      </section>
       <div className="topGridContainer">
         <div className="gridItem i1">
           <p className="text1">Schreiben</p>

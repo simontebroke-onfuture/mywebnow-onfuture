@@ -28,6 +28,7 @@
 }
 .agbContainer .textContainer {
   max-width: 726px;
+  width: 100%;
 }
 .agbContainer .textContainer .languageButton {
   background-color: #fff;
@@ -96,6 +97,13 @@
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
 }
+.agbContainer .textContainer .agbTextBlockContainer .agbTextBlock .agbText .blueLink {
+  text-decoration: none;
+  color: #0071e3;
+}
+.agbContainer .textContainer .agbTextBlockContainer .agbTextBlock .agbText.mb {
+  margin-bottom: 35px;
+}
 .agbContainer .textContainer .agbTextBlockContainer .agbTextBlock .agbText span {
   font-weight: 600;
 }
@@ -109,4 +117,18 @@
 .agbContainer .textContainer .agbTextBlockContainer .agbTextBlock .agbText .userDataList .userDataListSecondChild {
   position: relative;
   left: 20px;
+}
+
+.agb22 {
+  margin-bottom: 82px;
+}
+
+@media only screen and (max-width: 676px) {
+  .agbContainer .agbHeading {
+    font-size: 9.2vw;
+    line-height: 1;
+  }
+  .agbContainer .textContainer .languageButton {
+    margin-top: 32px;
+  }
 }/*# sourceMappingURL=AGB.css.map */

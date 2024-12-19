@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "motion/react";
 import "./TabsSlider.css";
 
@@ -15,6 +15,7 @@ const tabs = [
     designText:
       "Auf Basis der marktführenden Designs von Starbucks haben wir ein Layout geschaffen, das perfekt auf Cafés zugeschnitten ist. Besondere Getränke und Süßspeisen stehen im Mittelpunkt, um Kunden ein einzigartiges Erlebnis zu bieten.",
     icon: "/cafe.svg",
+    backgroundImage: "/cafe-bg.jpg",
   },
   {
     id: "gastronomie",
@@ -30,6 +31,7 @@ const tabs = [
     icon: "/restaurant.svg",
     designText:
       "Inspiriert von Apple und IKEA wurde dieses Design speziell entwickelt, um die Atmosphäre deines Lokals einzufangen. Menüs, das Team und besondere Highlights werden optimal präsentiert, um Gäste direkt anzusprechen.",
+    backgroundImage: "/gastronomie-bg.jpg",
   },
   {
     id: "dienstleistungen",
@@ -44,6 +46,7 @@ const tabs = [
     icon: "/globus.svg",
     designText:
       "Mit einem Ansatz, der sich an den klaren Strukturen von IKEA orientiert, wurde dieses Design so gestaltet, dass es alle wichtigen Informationen eines Dienstleisters übersichtlich darstellt. Leistungen, Referenzen und Kontaktmöglichkeiten stehen dabei im Vordergrund.",
+    backgroundImage: "/services-bg.jpg",
   },
   {
     id: "vereine",
@@ -59,6 +62,7 @@ const tabs = [
     icon: "/group.svg",
     designText:
       "Dieses Design, inspiriert von Apple, bringt die wichtigsten Aspekte deines Vereins auf den Punkt. Spielstände, Errungenschaften und Mitgliedschaften werden modern und einladend präsentiert, sodass sich alles Wichtige auf einen Blick erschließt.",
+    backgroundImage: "/vereine-bg.jpg",
   },
   {
     id: "handwerk",
@@ -74,6 +78,23 @@ const tabs = [
     icon: "/hammer.svg",
     designText:
       "Mit einer Struktur, die von IKEA inspiriert ist, stellt dieses Design Projekte, Leistungen und Partnerschaften klar und übersichtlich dar. Es betont die wichtigsten Aspekte eines Bauunternehmens und erleichtert die Kommunikation mit potenziellen Kunden.",
+    backgroundImage: "/handwerk-bg.jpg",
+  },
+  {
+    id: "immobilien",
+    label: "Immobilien",
+    img: "/immobilien.jpg",
+    functions:
+      "Immobilienübersicht · Standorte und Gebiete · Immobilienhighlights · Referenzen & abgeschlossene Projekte · Kontaktanfrage und Beratung · Detaillierte Immobilienbeschreibungen · Bildergalerie · Ratgeber · Bewertungen",
+    description: "Beschreibung",
+    sumDesc:
+      "Sobald du dein Design gewählt und uns deine Wünsche mitgeteilt hast, ist deine Webseite in bis zu 5 Tagen online.",
+    dynamicText:
+      "Gestalterische Elemente wie Illustrationen, Layouts und 3D-Modelle können angepasst werden.",
+    icon: "/home.svg",
+    designText:
+      "Dieses Design fokussiert sich auf die klare Präsentation von Immobilien und relevanten Informationen. Mit einer professionellen Struktur ermöglicht es schnellen Zugriff auf Objekte und einfache Kontaktmöglichkeiten.",
+    backgroundImage: "/immobilien-bg.jpg",
   },
 ];
 
@@ -96,9 +117,30 @@ function TabsSlider() {
     setCurrentInfo("laufzeit");
   }
 
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 680);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 680px)");
+
+    const handleMediaChange = (event) => {
+      setIsMobile(event.matches);
+    };
+
+    mediaQuery.addEventListener("change", handleMediaChange);
+
+    return () => {
+      mediaQuery.removeEventListener("change", handleMediaChange);
+    };
+  }, []);
+
   return (
     <div className="container">
-      <p className="heading">Wähle ein Design, passend zu deinem Business.</p>
+      <section id="choose">
+        <p className="heading">
+          Design & Funktionen. Sei so stark wie die Besten.
+        </p>
+      </section>
+
       <div className="tabs-slider-container">
         {tabs.map((tab) => (
           <button
@@ -125,7 +167,12 @@ function TabsSlider() {
         ))}
       </div>
       <div className="images-container">
-        <div className="image-container">
+        <div
+          className="image-container"
+          style={{
+            backgroundImage: `url(${activeTabData.backgroundImage})`,
+          }}
+        >
           <div className="image">
             {activeTabData && (
               <img src={activeTabData.img} alt={activeTabData.label} />
@@ -176,7 +223,9 @@ function TabsSlider() {
                     )}
                   </div>
                   <div className="infoDepFunction" onClick={setInfoToLaufzeit}>
-                    <p className="depText">Laufzeit zum GoLive</p>
+                    <p className="depText">
+                      {isMobile ? " GoLive" : "Laufzeit zum GoLive"}
+                    </p>
                     {currentInfo == "laufzeit" ? (
                       <hr className="hr1 visible" />
                     ) : (

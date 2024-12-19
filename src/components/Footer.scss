@@ -29,7 +29,7 @@
     display: flex;
     margin: 0 auto;
     gap: 11px;
-    margin-top: 125px;
+    margin-top: 75px;
     display: flex;
     flex-direction: column;
     .langButton {
@@ -88,7 +88,7 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media only screen and (max-width: 830px) {
+@media only screen and (max-width: 888px) {
   .bottom-footer-sec {
     flex-direction: column-reverse !important;
     gap: 23px;
@@ -102,6 +102,46 @@
     margin-top: 0px !important;
   }
 }
+
+@media only screen and (max-width: 690px) {
+  .footer .lower-footer .bottom-footer-sec p span.span1 {
+    margin-left: 0px;
+  }
+  .footer .lower-footer .bottom-footer-sec p.topText {
+    margin-bottom: 27px;
+  }
+}
+
+@media only screen and (max-width: 419px) {
+  .footer .lower-footer .bottom-footer-sec p span.span1 {
+    margin-left: 0px;
+  }
+  .footer .lower-footer .bottom-footer-sec p span {
+    margin-left: 15px;
+  }
+}
+
+@media only screen and (max-width: 389px) {
+  .footer .lower-footer .bottom-footer-sec p span.span1 {
+    margin-left: 0px;
+  }
+  .footer .lower-footer .bottom-footer-sec p span {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .footer .lower-footer .bottom-footer-sec p {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .footer .lower-footer .bottom-footer-sec p {
+    font-size: 12.25px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .footer .footer-grid {
     grid-template-columns: repeat(2, 1fr);

@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+}
+
 .navbar {
   background: #f5f5f7;
 
@@ -66,7 +70,7 @@ body.no-scroll {
   right: 0;
   z-index: 20;
   transition: all 350ms cubic-bezier(0, 0, 0.4, 0.95);
-  gap: 26px;
+  gap: 36px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -144,7 +148,7 @@ body.no-scroll {
   transform: rotate(-45deg) translate(3px, -2.6px);
 }
 
-@media only screen and (max-width: 975px) {
+@media only screen and (max-width: 1340px) {
   .navbar .navbarContainer {
     display: flex;
     justify-content: space-between;

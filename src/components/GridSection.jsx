@@ -3,7 +3,9 @@ import "./GridSection.css";
 function GridSection() {
   return (
     <div className="gridSection">
-      <p className="heading">Wähle das Paket, das am besten zu dir passt.</p>
+      <section id="paket">
+        <p className="heading">Wähle das Paket, das am besten zu dir passt.</p>
+      </section>
       <p className="headText">Preispakete</p>
       <div className="pricingGrid">
         <div className="pricingGridContainer">
@@ -123,6 +125,7 @@ function GridSection() {
                 </div>
                 <div className="provision">
                   <img src="/check.svg" alt="" />
+                  <section id="contact"></section>
                   <p className="provisionText">Support für Anpassungen</p>
                 </div>
                 <div className="provision">
@@ -134,6 +137,7 @@ function GridSection() {
           </div>
         </div>
       </div>
+
       <div className="tryBox">
         <p className="boxText">Alles beginnt mit einem Wort.</p>
         <div className="iconItem">
@@ -157,6 +161,91 @@ function GridSection() {
               <img src="/email.svg" alt="" />
             </div>
           </a>
+        </div>
+      </div>
+      <div className="sFooterContainer">
+        <div className="sTextBlock">
+          <p className="sText">
+            1. Mywebnow ist eine innovative Plattform, die durch den Einsatz
+            künstlicher Intelligenz und modernster Technologien professionelle
+            Webseiten für jedermann zugänglich macht. Das System analysiert die
+            Anforderungen der Nutzer anhand von Nachrichten, die über bevorzugte
+            Kommunikationskanäle wie WhatsApp, Instagram oder E-Mail
+            eingehen.Durch die intelligente Verarbeitung der Daten werden
+            branchenspezifische Designs und Funktionen automatisch erstellt und
+            anschließend von unserem Team optimiert. Mywebnow übernimmt dabei
+            alle Schritte:
+            <br />
+            <br />
+            <ul className="sList">
+              <li> Domain-Integration (inklusive Kauf und Einrichtung)</li>
+              <li>Professionelles Design und Entwicklung</li>
+              <li>
+                Vollständige Anpassung an branchenspezifische Anforderungen
+              </li>
+              <li>Rechtstexte (Datenschutz, Impressum)</li>
+              <li>
+                Live-Stellung der Webseite in Verbindung mit GitHub und der
+                sicheren
+              </li>
+              <li>Hosting-Infrastruktur von IONOS</li>
+            </ul>
+            <br />
+            Das gesamte System ist DSGVO-konform, und Nutzer werden jederzeit
+            über den Fortschritt ihrer Webseite informiert. Mit Mywebnow müssen
+            sie nichts selbst machen – keine versteckten Kosten, kein Aufwand,
+            nur Ergebnisse.
+          </p>
+        </div>
+        <div className="sTextBlock">
+          <p className="sText">
+            2. Alle Preispakete bei Mywebnow sind vor Beginn des Projekts
+            vollständig zu zahlen. Diese Vorauszahlung ist ein verbindlicher
+            Schritt und dient als Startschuss für das Projekt. Erst nach Eingang
+            der Zahlung beginnen wir mit der Umsetzung der Webseite. Die
+            Einmalzahlung deckt alle Leistungen ab, inklusive Design,
+            Domain-Integration, Live-Stellung und Hosting für das erste Jahr. Ab
+            dem zweiten Jahr fallen jährliche Kosten an:
+            <br />
+            <br />
+            <ul className="sList">
+              <li>
+                Pro Paket: 99 € Einmalig, nach 12 Monaten (Ab dem 2 Jahr) 139 €
+                jährlich
+              </li>
+              <li>
+                Pro Plus Paket: 299 € Einmalig, nach 12 Monaten (Ab dem 2 Jahr)
+                179 € jährlich
+              </li>
+            </ul>
+            <br />
+            Die jährlichen Kosten decken Hosting, Domain und Support ab. Eine
+            Rechnung wird rechtzeitig über das bevorzugte Kommunikationstool
+            zugestellt. Nach Zahlung bleibt die Webseite ohne Unterbrechung
+            online.
+          </p>
+        </div>
+        <div className="sTextBlock">
+          <p className="sText">
+            3. Die von Mywebnow bereitgestellten Rechtstexte wie Impressum und
+            Datenschutzrichtlinien werden nach bestem Wissen erstellt, sind
+            jedoch keine rechtlich verbindlichen Dokumente. Wir sind keine
+            Rechtsberater und übernehmen keine Haftung für die Rechtssicherheit
+            der Texte.
+            <br />
+            <br />
+            Wir empfehlen allen Nutzern, die bereitgestellten Rechtstexte von
+            einem professionellen Rechtsbeistand überprüfen und anpassen zu
+            lassen, um die rechtlichen Anforderungen vollständig zu erfüllen.
+          </p>
+        </div>
+        <div className="sTextBlock">
+          <p className="sText">
+            4. Alle Webseiten werden auf der sicheren und DSGVO-konformen
+            Infrastruktur von IONOS gehostet. Die Kombination aus GitHub für die
+            technische Umsetzung und IONOS für das Hosting garantiert höchste
+            Zuverlässigkeit und Sicherheit.
+          </p>
         </div>
       </div>
     </div>

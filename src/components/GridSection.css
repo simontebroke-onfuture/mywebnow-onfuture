@@ -149,7 +149,7 @@
   flex-direction: column;
   padding: 15px;
   height: 377px;
-  margin-bottom: 161px;
+  margin-bottom: 104px;
   border-radius: 4px;
 }
 .gridSection .tryBox .boxText {
@@ -195,6 +195,41 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+}
+.gridSection .sFooterContainer {
+  max-width: 826px;
+  padding-right: 0 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.gridSection .sFooterContainer .sTextBlock {
+  margin-bottom: 30px;
+}
+.gridSection .sFooterContainer .sTextBlock .sText {
+  color: #707070;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.41px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+.gridSection .sFooterContainer .sTextBlock .sText .sList {
+  position: relative;
+  left: 20px;
+}
+.gridSection .sFooterContainer .sTextBlock .sText .sList li {
+  color: #707070;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.41px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
 }
 
 @media only screen and (max-width: 1140px) {

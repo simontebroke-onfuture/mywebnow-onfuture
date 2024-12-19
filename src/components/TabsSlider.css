@@ -64,9 +64,8 @@ button {
   box-sizing: border-box;
 }
 .images-container .image-container {
-  background: url("/bg1.jpg");
   max-width: 1090px !important;
-  padding: 68px 79px;
+  padding: 64px 75px;
   border-radius: 8px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -123,7 +122,7 @@ button {
   width: 100%;
   display: flex;
   border-radius: 9px;
-  margin-top: 100px;
+  margin-top: 59px;
   justify-content: center;
   padding: 97px 1.2rem 65px;
 }
@@ -171,30 +170,6 @@ button {
   color: #838287;
 }
 
-@media only screen and (max-width: 1140px) {
-  .container {
-    padding: 0 1.2rem;
-  }
-  .images-container .image-container {
-    padding: 7%;
-  }
-}
-@media only screen and (max-width: 835px) {
-  .tabs-slider-container {
-    justify-content: flex-start;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .additionalDesc .descBox .descBoxInnerContainer .sumDesc {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 27px;
-    text-align: left;
-    text-underline-position: from-font;
-    -webkit-text-decoration-skip-ink: none;
-            text-decoration-skip-ink: none;
-  }
-}
 .descFunction {
   display: flex;
   flex: row;
@@ -249,4 +224,54 @@ button {
 .category,
 .sumDesc {
   max-width: 601px;
+}
+
+@media only screen and (max-width: 1140px) {
+  .container {
+    padding: 0 1.2rem;
+  }
+  .images-container .image-container {
+    padding: 7%;
+  }
+}
+@media only screen and (max-width: 835px) {
+  .tabs-slider-container {
+    justify-content: flex-start;
+  }
+  .additionalDesc .descBox {
+    margin-top: 45px;
+    padding-top: 66px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .additionalDesc .descBox .descBoxInnerContainer .sumDesc {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: center;
+    text-underline-position: from-font;
+    -webkit-text-decoration-skip-ink: none;
+            text-decoration-skip-ink: none;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .descFunction {
+    gap: 40px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .descFunction {
+    gap: 30px;
+  }
+  .depText {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .descFunction {
+    gap: 25px;
+  }
+  .depText {
+    font-size: 21px;
+  }
 }/*# sourceMappingURL=TabsSlider.css.map */

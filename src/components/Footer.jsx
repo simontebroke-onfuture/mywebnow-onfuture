@@ -7,7 +7,7 @@ function Footer() {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth <= 830) {
+      if (window.innerWidth <= 690) {
         setIsMobile(true);
       } else {
         setIsMobile(false);
@@ -56,18 +56,21 @@ function Footer() {
           <div className="bottom-footer-sec">
             {isMobile ? (
               <div>
-                <p>© 2024 Mywebnow. All rights reserved.</p>
-                <p>
+                <p className="topText">
                   <NavLink className="navLink" to={"/cookies"}>
-                    <span>Cookies & Nutzung</span>
+                    <span className="span1">Cookies & Nutzung</span>
                   </NavLink>
                   <NavLink className="navLink" to={"/privacy"}>
                     <span>Datenschutz</span>
                   </NavLink>
                   <NavLink className="navLink" to={"/agb"}>
+                    <span>AGB</span>
+                  </NavLink>
+                  <NavLink className="navLink" to={"/impressum"}>
                     <span>Impressum</span>
                   </NavLink>
                 </p>
+                <p>© 2024 Mywebnow. All rights reserved.</p>
               </div>
             ) : (
               <div>
@@ -80,6 +83,9 @@ function Footer() {
                     <span>Datenschutz</span>
                   </NavLink>
                   <NavLink className="navLink" to={"/agb"}>
+                    <span>AGB</span>
+                  </NavLink>
+                  <NavLink className="navLink" to={"/impressum"}>
                     <span>Impressum</span>
                   </NavLink>
                 </p>

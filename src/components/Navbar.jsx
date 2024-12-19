@@ -18,11 +18,11 @@ function Navbar() {
     }
   }
 
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 975);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1340);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 975);
+      setIsMobile(window.innerWidth <= 1340);
     };
 
     window.addEventListener("resize", handleResize);
@@ -59,10 +59,18 @@ function Navbar() {
             </div>
           </NavLink>
           <div className="linksItem">
-            <p>Research</p>
-            <p>Research</p>
-            <p>Research</p>
-            <p>Research</p>
+            <a href="#choose">
+              <p>Design Wählen</p>
+            </a>
+            <a href="#vorgehen">
+              <p>Vorgehen</p>
+            </a>
+            <a href="#paket">
+              <p>Paket Wählen</p>
+            </a>
+            <a href="#contact">
+              <p>Kontaktieren</p>
+            </a>
           </div>
           <div className="shareItem">
             <img src="/share3.svg" alt="Share" onClick={handleShare} />
@@ -82,10 +90,18 @@ function Navbar() {
       </div>
       <div className={navClassName}>
         <hr className="navLine" />
-        <p className="res--nav-item">Research</p>
-        <p className="res--nav-item">Research</p>
-        <p className="res--nav-item">Research</p>
-        <p className="res--nav-item">Research</p>
+        <a href="#choose" onClick={toggleNavbar}>
+          <p className="res--nav-item">Design Wählen</p>
+        </a>
+        <a href="#vorgehen" onClick={toggleNavbar}>
+          <p className="res--nav-item">Vorgehen</p>
+        </a>
+        <a href="#paket" onClick={toggleNavbar}>
+          <p className="res--nav-item">Paket Wählen</p>
+        </a>
+        <a href="#contact" onClick={toggleNavbar}>
+          <p className="res--nav-item">Design Wählen</p>
+        </a>
       </div>
     </>
   );

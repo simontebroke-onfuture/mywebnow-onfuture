@@ -100,7 +100,7 @@ function Navbar() {
           <p className="res--nav-item">Paket Wählen</p>
         </a>
         <a href="#contact" onClick={toggleNavbar}>
-          <p className="res--nav-item">Design Wählen</p>
+          <p className="res--nav-item">Kontaktieren</p>
         </a>
       </div>
     </>

@@ -29,7 +29,7 @@ function Impressum() {
                 <span>Kontakt</span>
                 <br />
 
-                <a href="tel:+15734729666" className="blueLink">
+                <a href="tel:+4915734729666" className="blueLink">
                   0157 3472 9666
                 </a>
                 <br />

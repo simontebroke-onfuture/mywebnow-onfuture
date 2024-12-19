@@ -73,7 +73,7 @@ function StartSection() {
           <img src="/searcharrow.svg" alt="Search" />
         </div>
         <div className="iconItem">
-          <a href="https://wa.me/4915175357857" target="_blank">
+          <a href="https://wa.me/4915734729666" target="_blank">
             <div className="icon">
               <img src="/whatsapp.svg" alt="" />
             </div>

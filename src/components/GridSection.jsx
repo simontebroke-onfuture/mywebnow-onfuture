@@ -74,13 +74,13 @@ function GridSection() {
               <p className="topText plus">plus</p>
             </div>
             <div className="pricingText">
-              <p className="priceText">99 €</p>
+              <p className="priceText">299 €</p>
               <p className="priceText priceTextDef">
                 <span>/</span> Einmalig
               </p>
             </div>
             <p className="provisionText">
-              Nach 12 Monaten (ab dem 2 Jahr) 139 € jährlich für Domain, Hosting
+              Nach 12 Monaten (ab dem 2 Jahr) 179 € jährlich für Domain, Hosting
               & Support.
             </p>
             <button className="purchaseButton">Jetzt Starten</button>
@@ -116,7 +116,7 @@ function GridSection() {
                 <div className="provision">
                   <img src="/check.svg" alt="" />
                   <p className="provisionText">
-                    Automatische Online Stellung in nur 5 Tagen
+                    Automatische Online Stellung in nur 3 Tagen
                   </p>
                 </div>
                 <div className="provision">

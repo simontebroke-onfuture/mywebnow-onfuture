@@ -56,6 +56,7 @@ function StartSection() {
 
   return (
     <div className="startSection">
+      <section id="start"></section>
       <div className="startSectionContainer">
         <div className="headingItem">
           <h1 className="mainHeading">Worum geht's bei deiner Website?</h1>

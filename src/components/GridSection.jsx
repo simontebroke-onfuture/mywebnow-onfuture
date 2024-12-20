@@ -24,7 +24,9 @@ function GridSection() {
               Nach 12 Monaten (ab dem 2 Jahr) 139 € jährlich für Domain, Hosting
               & Support.
             </p>
-            <button className="purchaseButton">Jetzt Starten</button>
+            <a href="#start">
+              <button className="purchaseButton">Jetzt Starten</button>
+            </a>
             <div className="provisions">
               <div className="provisions">
                 <div className="provision">
@@ -83,7 +85,9 @@ function GridSection() {
               Nach 12 Monaten (ab dem 2 Jahr) 179 € jährlich für Domain, Hosting
               & Support.
             </p>
-            <button className="purchaseButton">Jetzt Starten</button>
+            <a href="#start">
+              <button className="purchaseButton">Jetzt Starten</button>
+            </a>
             <div className="provisions">
               <div className="provisions">
                 <div className="provision">

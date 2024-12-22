@@ -18,11 +18,11 @@ function Navbar() {
     }
   }
 
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1340);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1020);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 1340);
+      setIsMobile(window.innerWidth <= 1020);
     };
 
     window.addEventListener("resize", handleResize);

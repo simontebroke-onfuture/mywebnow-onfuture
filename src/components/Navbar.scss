@@ -48,6 +48,7 @@ a {
         text-align: left;
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
+        white-space: nowrap;
       }
     }
     .shareItem {
@@ -148,7 +149,7 @@ body.no-scroll {
   transform: rotate(-45deg) translate(3px, -2.6px);
 }
 
-@media only screen and (max-width: 1340px) {
+@media only screen and (max-width: 1020px) {
   .navbar .navbarContainer {
     display: flex;
     justify-content: space-between;

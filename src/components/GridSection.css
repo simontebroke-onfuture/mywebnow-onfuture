@@ -240,7 +240,11 @@
   .gridSection .heading {
     font-size: 30px;
     line-height: 39px;
-    margin-top: 81px;
+    margin-top: 121px;
+    margin-bottom: 14px;
+  }
+  .gridSection .headText {
+    margin-bottom: 30px;
   }
 }
 @media only screen and (max-width: 750px) {
